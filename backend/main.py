@@ -5,7 +5,9 @@ from routers import vibe
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://moodra-inky.vercel.app",
+    "https://moodra-grwz.onrender.com"
 ]
 
 app.add_middleware(
