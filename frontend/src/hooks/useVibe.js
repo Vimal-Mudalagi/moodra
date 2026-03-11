@@ -8,7 +8,7 @@ export default function useVibe() {
     setLoading(true);
     setVibe(null);
     try {
-      const res = await fetch("http://localhost:8000/api/vibe", {
+      const res = await fetch("https://moodra-grwz.onrender.com/api/vibe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ mood }),
